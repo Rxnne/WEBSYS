@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Roxanne</title>
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="icon" href="C:\Users\Acer\Desktop\WEBSYS\LOGO1.png" type="image/x-icon">  
+
+</head>
+<body>
+
+    <header>
+        <a href="HOME.html"> <img src = "reLOGO.png" alt = "Web Logo" class="img-border"></a>
+        <a href="HOME.html" class="header-text mainP"><h2>&nbsp;Home&nbsp;</h2></a>
+        <a href="Profile.html" class="header-text header-a"><h2>&nbsp;Profile&nbsp;</h2></a>
+        <a href="About.html" class="header-text header-a"><h2>&nbsp;About&nbsp;</h2></a>
+        <a href="contact.html" class="header-text header-a"><h2>&nbsp;Contact&nbsp;</h2></a>
+    
+        <div class="dropdown">
+            <button class="dropbtn"> <img src = "nav.png" alt = "Navigation" width="50px" class="image-right"></button>
+            <div class="dropdown-content">
+                <a href="HomePage.html">Home</a>
+                <a href="#">Works</a>
+                <a href="SKILLS.html">Skills</a>
+                <a href="EDU.html">Educational Attainment</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </div>
+            </div>
+            </header>
+
+            <hr>
+            
+            <div class="container">
+              <table>
+                  <tr>
+                      <td><img src="name.png" class="image-container"></td>
+                  </tr>
+                  <tr>
+                      <td style="padding-top: 5px;">
+                          <h4>Hi! I am Roxanne Guillermo, currently studying Bachelor of Science 
+                              in Information Technology on my 2nd Year. I am inviting you to Let's 
+                              start an exciting adventure, one that shows the heart of my journey, 
+                              and tells the story of my growth.
+                          </h4>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="card-container">
+                            <a href="Profile.html" class="card-a">
+                              <div class="card">
+                                  <div class="content">
+                                      <h1>Know me more</h1>
+                              </div>
+                          </a>
+                              
+                          </div>
+                      </td>
+                  </tr>
+              </table>
+          
+              <div class="image-container1">
+                  <img src="ME.png" class="img-me"">
+              </div>
+          </div>
+          
+
+
+</body>
+<script>
+    function openSkills() {
+    fetch("C:/Users/Acer/Desktop/WEBSYS/Profile.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('tabtwo').innerHTML = data;
+      });
+    }
+  </script>
+</html>
