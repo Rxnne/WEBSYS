@@ -354,6 +354,39 @@ i {
     color: #999494;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .card {
+      width: 80%;
+      margin-top: 30px;
+      margin-right: 0;
+  }
+
+  h3 {
+      font-size: 200%;
+  }
+
+  p {
+      font-size: 100%;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .card {
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 0;
+  }
+
+  h3 {
+      font-size: 150%;
+  }
+
+  p {
+      font-size: 80%;
+  }
+}
 
 
 
@@ -442,6 +475,29 @@ i {
     /* Add more styles as needed */
 }
 
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .cardContact {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .socialContainer {
+      margin-bottom: 20px;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .cardContact {
+      padding: 15px;
+  }
+}
   /*END OF CONTACT*/
 
   /*START OF BUTTON*/
@@ -464,6 +520,13 @@ button {
     transition: all .3s ease-in-out;
 
     margin-left: calc(100% - 20%); /* Adjust the value based on the button width */
+
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      margin-left: calc(70% - 20%);
+      width: 50%; /* Make the button full width on smaller screens */
+      margin-bottom: 5%;
+    }
 }
 
 
@@ -694,6 +757,7 @@ button {
     margin-right: 10px; /* Add margin to the right of the image for spacing */
 }
 
+
 h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -755,3 +819,44 @@ h4 {
   }
 
   
+@media (max-width: 768px) {
+  .cardFeedback,
+  .containerText {
+      width: 80%; /* Adjust the width for smaller screens */
+      margin-left: 10px; /* Adjust the margin for smaller screens */
+  }
+
+  .img-feedback {
+      width: 40%;
+  }
+
+  h4 {
+      padding-left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardFeedback,
+  .containerText {
+      width: 90%; /* Adjust the width for even smaller screens */
+      margin-left: 5px; /* Adjust the margin for even smaller screens */
+  }
+
+  .img-feedback {
+      display: none; /* Hide the image on very small screens */
+  }
+
+  h4 {
+      padding-left: 5%;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+      width: 90%; /* Take up the full width on very small screens */
+      margin-left: 0; /* Remove the left margin for full width */
+  }
+
+  .feedback-form button {
+      margin-left: 0; /* Remove the left margin for full width */
+  }
+}
