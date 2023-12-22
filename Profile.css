@@ -462,12 +462,6 @@ b {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size as needed */
 }
 
-p {
-  font-size: 60%;
-  text-align: justify;
-  color: white;
-}
-
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   p {
