@@ -1,33 +1,35 @@
-
-body{
-    background-color: #0b0b0c;
-    background-position: center;
-    height: auto;
-    margin: 0;
-    transition: opacity 0.5s;
+body {
+  background-color: #0b0b0c;
+  background-position: center;
+  height: auto;
+  margin: 0;
+  transition: opacity 0.5s;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 50vh;
-    box-shadow: 0 0 10px rgba(215, 125, 105, 0);
-    transition: box-shadow 0.3s;
-    padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  box-shadow: 0 0 10px rgba(215, 125, 105, 0);
+  transition: box-shadow 0.3s;
+  padding-top: 10%;
 }
 
-
- 
 @keyframes blink {
-    0% { opacity: 1; } 
-    50% { opacity: 0; } 
-    100% { opacity: 1; } 
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .blinking-image {
-    animation: blink 1s 2; 
-    
+  animation: blink 1s 2;
 }
 
 @keyframes appear {
@@ -40,24 +42,33 @@ body{
 }
 
 .button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    display: block;
-    text-align: center; 
-    padding-top: 20px;
-    display: block;
-    text-align: center; 
-    padding-top: 20px
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .image-container {
+    padding-top: 5%; /* Adjust padding for smaller screens */
   }
+
+  .button {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    padding-top: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
   
   /* button styling */
   .button {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
     --animation-color: #37FF8B;
     --fs-size: 2em;
     letter-spacing: 3px;
@@ -69,10 +80,11 @@ body{
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
     display: block;
-    text-align: center; 
+    text-align: center;
     padding-top: 20px;
   }
-  /* this is the text, when you hover on button */
+  
+  /* this is the text, when you hover on the button */
   .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -85,15 +97,28 @@ body{
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
     display: block;
-    text-align: center; 
+    text-align: center;
     padding-top: 20px;
   }
+  
   /* hover */
   .button:hover .hover-text {
     width: 100%;
     display: block;
-    text-align: center; 
+    text-align: center;
     padding-top: 20px;
-    filter: drop-shadow(0 0 23px var(--animation-color))
-    
+    filter: drop-shadow(0 0 23px var(--animation-color));
   }
+  
+  /* Media query for screens smaller than 600px */
+  @media only screen and (max-width: 600px) {
+    .button {
+      font-size: 1.5em; /* Adjust font size for smaller screens */
+      /* Add any additional styles for smaller screens here */
+    }
+    .hover-text {
+      font-size: 1.0em; /* Adjust font size for smaller screens */
+      /* Add any additional styles for smaller screens here */
+    }
+  }
+  

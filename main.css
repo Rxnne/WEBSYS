@@ -59,8 +59,22 @@ font-size: 18px;
     width: auto;
     text-decoration: none;
     margin-left: 12%;
-
 }
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .header-text {
+        margin-left: 5%;
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    .header-text {
+        margin-left: 3%;
+    }
+}
+
 
 h2 {
     font-weight: lighter;
@@ -103,6 +117,47 @@ h2 {
     width: 80%;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .image-container {
+        width: 200%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    .image-container {
+        width: 400%; /* Adjust width for even smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 476px) {
+    .image-container {
+        width: 400%; /* Adjust width for even smaller screens */
+    }
+}
+
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 476px) {
+    .image-container {
+        width: 500%; /* Adjust width for even smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 231px) {
+    .image-container {
+        width: 300%; /* Adjust width for even smaller screens */
+    }
+}
+
+@media (max-width: 176px) {
+    .image-container {
+        width: 300%; /* Adjust width for even smaller screens */
+    }
+}
 
 
 nav {
@@ -132,10 +187,9 @@ nav {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    right: 0; /* Adjusted right property to make the dropdown open towards the left */
-  
+    right: 0;
   }
   
   .dropdown-content a {
@@ -145,26 +199,89 @@ nav {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
   
-  .dropdown:hover .dropbtn {background-color: #c046b6;}
-
+  .dropdown:hover .dropbtn {
+    background-color: #c046b6;
+  }
+  
   .header-a {
     text-decoration: none;
-    transition: text-decoration 0.3s; /* Add a smooth transition for the underline */
-    }
-
-    /* Add an underline when the link is hovered */
-    .header-a:hover {
-      color: rgb(110, 102, 102);
-    }
+    transition: text-decoration 0.3s;
+  }
+  
+  .header-a:hover {
+    color: rgb(110, 102, 102);
+  }
 
     .mainP {
         text-decoration: underline;
         }
 
+
+        /* Media query for header text */
+@media (max-width: 600px) {
+    .header-text {
+      margin-left: 5%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .header-text {
+      margin-left: 10%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-text {
+      margin-left: 15%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-text {
+      margin-left: 10%;
+    }
+  }
+  
+  /* Media query for image containers */
+  @media (max-width: 768px) {
+    .image-left,
+    .image-right {
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .image-left,
+    .image-right {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  
+  /* Media query for dropdown content */
+  @media (max-width: 600px) {
+    .dropdown-content {
+      right: -50%; /* Adjusted right property for better visibility on small screens */
+      min-width: 150px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dropdown-content {
+      right: -70%; /* Further adjusted for smaller screens */
+    }
+  }
+  
 /*END OF HEADER*/   
 
 h4 {
@@ -177,6 +294,21 @@ h4 {
     font-size: 120%;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    h4 {
+        font-size: 90%; /* Adjust font size for smaller screens */
+        padding-left: 10%; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    h4 {
+        font-size: 80%; /* Adjust font size for even smaller screens */
+        padding-left: 5%; /* Adjust padding for even smaller screens */
+    }
+}
 table {
     width: 60%;
     border-collapse: collapse;
@@ -251,6 +383,23 @@ h3 {
     vertical-align: middle; /* Center content vertically */
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .th-card, .td-card {
+        padding: 6px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    .th-card, .td-card {
+        padding: 4px; /* Further adjust padding for even smaller screens */
+        font-size: 10px; /* Further adjust font size for even smaller screens */
+    }
+}
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
@@ -258,7 +407,6 @@ h3 {
     padding-left: 80px;
     margin: 0 auto;
 }
-
 .card {
     position: relative;
     display: flex;
@@ -269,9 +417,19 @@ h3 {
     overflow: hidden;  
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    width: 80%; /* Adjust the width of the cards */
+    width: 20%; /* Default width for larger screens */
     margin: 0 auto;
-    padding: 0;        /* Remove any default padding */
+    padding: 0; /* Remove any default padding */
+
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+
+    /* Media query for screens smaller than 576px */
+    @media (max-width: 576px) {
+        width: 100%; /* Adjust width for even smaller screens */
+    }
 }
 
 .content {
@@ -340,6 +498,31 @@ h3 {
     box-shadow: none;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .content .heading {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .content .btn {
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    .content .heading {
+        font-size: 24px; /* Further adjust font size for even smaller screens */
+    }
+
+    .content .btn {
+        padding: 6px; /* Further adjust padding for even smaller screens */
+        font-size: 12px; /* Further adjust font size for even smaller screens */
+    }
+}
+
+
 
 @media (max-width: 600px) {
 /* Apply styles when the screen width is 600 pixels or less */
@@ -393,5 +576,19 @@ h1 {
     font-size: 110%;
     color: white;
     font-weight: bold;
-    
 }
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 70%; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 60%; /* Further adjust font size for even smaller screens */
+    }
+}
+
