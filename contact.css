@@ -363,7 +363,7 @@ i {
   }
 
   h3 {
-      font-size: 200%;
+      font-size: 300%;
   }
 
   p {
@@ -380,7 +380,7 @@ i {
   }
 
   h3 {
-      font-size: 150%;
+      font-size: 300%;
   }
 
   p {
@@ -676,72 +676,98 @@ button {
     background-color: #011522;
     border-radius: 8px;
     z-index: 1;
-   }
-   
-   .tools {
+
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+        width: 100%; /* Make the card full width on smaller screens */
+        margin-left: 0; /* Center the card on smaller screens */
+    }
+}
+
+.tools {
     display: flex;
     align-items: center;
     padding: 9px;
-   }
-   
-   .circle {
+}
+
+.circle {
     padding: 0 4px;
-   }
-   
-   .box {
+}
+
+.box {
     display: inline-block;
     align-items: center;
     width: 10px;
     height: 10px;
     padding: 1px;
     border-radius: 50%;
-   }
-   
-   .red {
-    background-color: #ff605c;
-   }
-   
-   .yellow {
-    background-color: #ffbd44;
-   }
-   
-   .green {
-    background-color: #00ca4e;
-   }
-   
-   .pItalic {
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 110%;
-    color: white;
-    text-align: justify;
-    margin: 0; /* Remove the default margin */
-    padding-left: 5%;
-    padding-right: 10%;
-  }
-  
-  .pName {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; /* Use font-weight for boldness */
-    font-size: 110%;
-    color: white;
-    text-align: right;
-    margin: 0; /* Remove the default margin */
-    padding-right: 10%;
-  }
-  
-  .pSchool {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 50%;
-    color: white;
-    text-align: right;
-    margin: 0; /* Remove the default margin */
-    padding-right: 10%;
-    padding-bottom: 5%;
+}
 
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.pItalic {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 110%;
+  color: white;
+  text-align: justify;
+  margin: 0; /* Remove the default margin */
+  padding-left: 5%;
+  padding-right: 10%;
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+      font-size: 90%; /* Adjust font size for smaller screens */
+      padding-left: 2%; /* Adjust padding for smaller screens */
+      padding-right: 2%; /* Adjust padding for smaller screens */
   }
-  .containerText {
+}
+
+.pName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; /* Use font-weight for boldness */
+  font-size: 110%;
+  color: white;
+  text-align: right;
+  margin: 0; /* Remove the default margin */
+  padding-right: 10%;
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+      font-size: 90%; /* Adjust font size for smaller screens */
+      padding-right: 2%; /* Adjust padding for smaller screens */
+  }
+}
+
+.pSchool {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 50%;
+  color: white;
+  text-align: right;
+  margin: 0; /* Remove the default margin */
+  padding-right: 10%;
+  padding-bottom: 5%;
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+      font-size: 40%; /* Adjust font size for smaller screens */
+      padding-right: 2%; /* Adjust padding for smaller screens */
+      padding-bottom: 2%; /* Adjust padding for smaller screens */
+  }
+}
+
+.containerText {
     display: flex;
     align-items: flex-start; /* Align items to the top */
     margin: 0 auto;
@@ -749,7 +775,13 @@ button {
     background-color: #011522;
     border-radius: 8px;
     z-index: 1;
-  }
+
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
   
   .img-feedback {
     width: 25%;
@@ -857,6 +889,6 @@ h4 {
   }
 
   .feedback-form button {
-      margin-left: 0; /* Remove the left margin for full width */
+      margin:0 auto;
   }
 }
